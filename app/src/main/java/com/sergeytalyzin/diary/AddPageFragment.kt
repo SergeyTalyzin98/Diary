@@ -1,4 +1,3 @@
-
 package com.sergeytalyzin.diary
 
 import android.app.Activity.RESULT_OK
