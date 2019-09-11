@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+
+    <item
+            android:title="@string/addPassword"
+            android:id="@+id/password"
+            app:showAsAction="ifRoom">
+    </item>
+
+    <item
+            android:title="@string/descriptionOfApp"
+            android:id="@+id/description"
+            android:icon="@drawable/help"
+            app:showAsAction="always"
+    >
+    </item>
+
+</menu>

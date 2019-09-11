@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Diary</string>
+    <string name="descriptionOfApp">Description</string>
+    <string name="addPassword">Password</string>
+    <string name="saveText">save</string>
+    <string name="textForDescriptionOfPhoto">Your photos:</string>
+    <string name="descriptionOfImageButtonMakePhoto">toMakeAPhoto</string>
+    <string name="descriptionOfImageButtonAddPhoto">toAddAPhoto</string>
+    <string name="textForDescriptionOfText">Your text:</string>
+    <string name="textForTextChangeAndAdd">Write!</string>
+    <string name="textForDescriptionOfColors">Background color</string>
+    <string name="textForDescriptionOfPassword">Password creation</string>
+    <string name="hintForPass1">Create a password</string>
+    <string name="hintForPass2">Confirm password</string>
+    <string name="textForDescriptionOfPassBtn">Click OK to save the password</string>
+    <string name="textForSavePassword">OK</string>
+    <string name="textForDelPassBtn">Remove password</string>
+    <string name="textForDescriptionOfDonePass">Remove password</string>
+    <string name="textForDescriptionOfDeletePhoto">To delete a photo, hold</string>
+    <string name="textForCreateNotesToday">Create an entry for today</string>
+
+    <string name="textForWrongPassword">Wrong password</string>
+    <string name="textToday">Today</string>
+    <string name="textDeletion">Delete</string>
+    <string name="textDelete">Delete</string>
+    <string name="textDeleteRecord">Delete record?</string>
+    <string name="textCancel">Cancel</string>
+    <string name="textOk">OK</string>
+    <string name="textRecordSaved">Record saved.</string>
+    <string name="textRecordChanged">Record changed</string>
+    <string name="textRecordDeleted">Record deleted.</string>
+    <string name="textExit">Exit</string>
+    <string name="textExitApplication">Exit</string>
+    <string name="textChangesWillNotBeSaved">Changes will not be saved.</string>
+    <string name="textUsingSpace">Using the space in the password is prohibited.</string>
+    <string name="textPasswordsDoNotMatch">Passwords do not match.</string>
+    <string name="textPasswordNotShorterThanFourCharacters">Password not shorter than four characters.</string>
+    <string name="textImpossiblePhoto">It will be impossible to restore the photo.</string>
+    <string name="textNoPhotos">No photos.</string>
+    <string name="textNoRecords">No records.</string>
+
+    <string name="textPasswordAdded">Password added</string>
+    <string name="textPasswordRemoved">Password removed</string>
+
+    <string name="textSunday">Sunday</string>
+    <string name="textMonday">Monday</string>
+    <string name="textTuesday">Tuesday</string>
+    <string name="textWednesday">Wednesday</string>
+    <string name="textThursday">Thursday</string>
+    <string name="textFriday">Friday</string>
+    <string name="textSaturday">Saturday</string>
+
+
+    <string name="textEditing">Editing</string>
+    <string name="textViewMode">View mode</string>
+
+    <string name="textJanuary">January</string>
+    <string name="textFebruary">February</string>
+    <string name="textMarch">March</string>
+    <string name="textApril">April</string>
+    <string name="textMay">May</string>
+    <string name="textJune">June</string>
+    <string name="textJuly">July</string>
+    <string name="textAugust">August</string>
+    <string name="textSeptember">September</string>
+    <string name="textOctober">October</string>
+    <string name="textNovember">November</string>
+    <string name="textDecember">December</string>
+
+    <string name="textForDescriptionOfPasInPA">Diary data is password protected</string>
+    <string name="textForDescriptionPage">Every day create new records, write down everything you want, add photos, choose a background
+        and edit your notes throughout the day! Also be careful, because the next day your records will be available only for viewing.</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".DescriptionFragment">
+
+    <com.google.android.gms.ads.AdView
+            ads:layout_constraintTop_toTopOf="parent"
+            ads:layout_constraintRight_toRightOf="parent"
+            ads:layout_constraintLeft_toLeftOf="parent"
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adViewDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-5571324881623034/9300161051">
+    </com.google.android.gms.ads.AdView>
+
+
+    <TextView
+            android:id="@+id/textOfDescription"
+            app:layout_constraintTop_toBottomOf="@+id/adViewDescription"
+            android:layout_marginTop="15dp"
+            android:textColor="#000"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</android.support.constraint.ConstraintLayout>

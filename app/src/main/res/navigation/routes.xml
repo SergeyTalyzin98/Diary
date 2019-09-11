@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/routes" app:startDestination="@id/mainFragment">
+
+    <fragment android:id="@+id/mainFragment"
+              android:name="com.sergeytalyzin.diary.MainFragment"
+              android:label="fragment_main"
+              tools:layout="@layout/fragment_main">
+        <action android:id="@+id/action_mainFragment_to_detailsOfDayFragment"
+                app:destination="@id/detailsOfDayFragment"/>
+        <action android:id="@+id/action_mainFragment_to_addPageFragment" app:destination="@id/addPageFragment"/>
+        <action android:id="@+id/action_mainFragment_to_descriptionFragment" app:destination="@id/descriptionFragment"/>
+    </fragment>
+
+    <fragment android:id="@+id/detailsOfDayFragment"
+              android:name="com.sergeytalyzin.diary.DetailsOfDayFragment"
+              android:label="fragment_details_of_day"
+              tools:layout="@layout/fragment_details_of_day">
+        <argument android:name="idOfDay" app:argType="integer"/>
+        <action app:popUpTo="@+id/mainFragment" app:popUpToInclusive="false"
+                android:id="@+id/action_detailsOfDayFragment_to_mainFragment" app:destination="@id/mainFragment"/>
+    </fragment>
+    <fragment android:id="@+id/addPageFragment"
+              android:name="com.sergeytalyzin.diary.AddPageFragment"
+              android:label="fragment_add_page"
+              tools:layout="@layout/fragment_add_page">
+        <argument android:name="changeOrAdd" app:argType="string"/>
+        <argument android:name="id" app:argType="integer"/>
+        <action app:popUpTo="@+id/mainFragment"
+                android:id="@+id/action_addPageFragment_to_mainFragment" app:destination="@id/mainFragment"
+                app:popUpToInclusive="false"/>
+    </fragment>
+    <fragment android:id="@+id/descriptionFragment" android:name="com.sergeytalyzin.diary.DescriptionFragment"
+              android:label="fragment_description" tools:layout="@layout/fragment_description"/>
+
+</navigation>

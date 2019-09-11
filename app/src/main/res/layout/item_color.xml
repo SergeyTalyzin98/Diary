@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/itemColorOfDay"
+android:layout_height="50dp"
+android:layout_width="50dp"
+android:layout_marginRight="5dp"
+android:layout_marginBottom="7dp"
+>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/wrapperOfAddPageFragment"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".AddPageFragment">
+
+    <ScrollView
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+        >
+
+            <com.google.android.gms.ads.AdView
+                    ads:layout_constraintTop_toTopOf="parent"
+                    ads:layout_constraintRight_toRightOf="parent"
+                    ads:layout_constraintLeft_toLeftOf="parent"
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adViewAddPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-5571324881623034/4041462498">
+            </com.google.android.gms.ads.AdView>
+
+            <android.support.v7.widget.CardView
+                    app:cardBackgroundColor="#fafafa"
+                    app:cardCornerRadius="10dp"
+                    android:id="@+id/wrapperDateChangeAndAdd"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="7dp"
+                    app:layout_constraintTop_toBottomOf="@+id/adViewAddPage"
+            >
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                >
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dayChangeAndAdd"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                    />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dateChangeAndAdd"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toRightOf="@+id/dayChangeAndAdd"
+                    />
+
+                    <ImageView
+                            android:id="@+id/editOrViewChangeAndAdd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintVertical_bias="0.5"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            android:src="@drawable/mode_edit"
+                    />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                    app:cardCornerRadius="10dp"
+                    android:id="@+id/wrapperCameraChangeAndAdd"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardBackgroundColor="#fafafa"
+                    app:layout_constraintTop_toBottomOf="@id/wrapperDateChangeAndAdd"
+            >
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="3dp"
+                >
+                    <TextView
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:id="@+id/descriptionOfPhotoAdd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/textForDescriptionOfPhoto"
+                    />
+
+                    <TextView
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toRightOf="@+id/descriptionOfPhotoAdd"
+                            android:id="@+id/countPhoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <ImageButton
+                            app:layout_constraintTop_toBottomOf="@+id/descriptionOfPhotoAdd"
+                            app:layout_constraintRight_toLeftOf="@id/addPhoto"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:id="@+id/makePhoto"
+                            android:layout_marginTop="12dp"
+                            android:contentDescription="@string/descriptionOfImageButtonMakePhoto"
+                            android:background="@drawable/btn_for_photo"
+                            android:src="@drawable/ic_camera"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"/>
+
+                    <ImageButton
+                            app:layout_constraintTop_toBottomOf="@+id/descriptionOfPhotoAdd"
+                            app:layout_constraintLeft_toRightOf="@id/makePhoto"
+                            app:layout_constraintRight_toRightOf="parent"
+                            android:id="@+id/addPhoto"
+                            android:layout_marginTop="12dp"
+                            android:contentDescription="@string/descriptionOfImageButtonAddPhoto"
+                            android:src="@drawable/ic_image"
+                            android:background="@drawable/btn_for_photo"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"/>
+
+                    <android.support.v7.widget.RecyclerView
+                            android:layout_marginTop="10dp"
+                            app:layout_constraintTop_toBottomOf="@id/makePhoto"
+                            android:id="@+id/recyclerViewForPhotos"
+                            android:scrollbars="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:overScrollMode="never"
+                    />
+
+                    <TextView
+                            android:layout_marginTop="2dp"
+                            app:layout_constraintTop_toBottomOf="@+id/recyclerViewForPhotos"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:text="@string/textForDescriptionOfDeletePhoto"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                    app:cardCornerRadius="10dp"
+                    android:id="@+id/wrapperDataChangeAndAdd"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardBackgroundColor="#fafafa"
+                    android:padding="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/wrapperCameraChangeAndAdd"
+            >
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                    <TextView
+                            android:id="@+id/descriptionOfText"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/textForDescriptionOfText"
+                    />
+
+                    <EditText
+                            app:layout_constraintTop_toBottomOf="@+id/descriptionOfText"
+                            app:layout_constraintBottom_toTopOf="@+id/recyclerViewForSmiles"
+                            android:id="@+id/textChangeAndAdd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fafafa"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/textForTextChangeAndAdd"
+                            android:textCursorDrawable="@drawable/my_cursor"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginBottom="7dp"
+                    />
+
+                    <android.support.v7.widget.RecyclerView
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:id="@+id/recyclerViewForSmiles"
+                            android:scrollbars="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:overScrollMode="never"
+                    />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                    app:cardBackgroundColor="#fafafa"
+                    app:cardCornerRadius="10dp"
+                    android:id="@+id/wrapperColorOfDay"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/wrapperDataChangeAndAdd"
+            >
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                >
+
+                    <TextView
+                            android:id="@+id/descriptionOfColors"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/textForDescriptionOfColors"
+                    />
+
+                    <android.support.v7.widget.RecyclerView
+                            android:layout_marginTop="5dp"
+                            app:layout_constraintTop_toBottomOf="@+id/descriptionOfColors"
+                            android:id="@+id/recyclerViewForColors"
+                            android:scrollbars="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:overScrollMode="never"
+                    />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button android:id="@+id/saveBtn"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorText"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/wrapperColorOfDay"
+                    android:text="@string/saveText"
+                    android:enabled="false"
+                    android:background="@drawable/custom_button"
+            />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".MainFragment"
+        android:id="@+id/frameLayout">
+
+    <android.support.v7.widget.CardView
+            app:cardBackgroundColor="#cae8cb"
+            app:cardCornerRadius="10dp"
+            android:visibility="gone"
+            android:id="@+id/wrapperPassword"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="7dp"
+            app:layout_constraintTop_toTopOf="parent"
+    >
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+        >
+            <TextView
+                    android:id="@+id/descriptionOfPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:text="@string/textForDescriptionOfPassword"
+            />
+
+            <ImageView
+                    android:id="@+id/closeWrapPassword"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:src="@drawable/ic_close_in_wrap_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <EditText
+                    app:layout_constraintTop_toBottomOf="@+id/closeWrapPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pass1"
+                    android:inputType="textPassword"
+                    android:hint="@string/hintForPass1"
+                    android:maxLength="8"
+            />
+
+            <EditText
+                    app:layout_constraintTop_toBottomOf="@+id/pass1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pass2"
+                    android:maxLength="8"
+                    android:inputType="textPassword"
+                    android:hint="@string/hintForPass2"
+            />
+
+            <TextView
+                    android:visibility="gone"
+                    android:textColor="@color/colorError"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pass2"
+                    android:id="@+id/errorsOfPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/descriptionOfPassBtn"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/errorsOfPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textForDescriptionOfPassBtn"
+
+            />
+
+            <Button
+                    app:layout_constraintTop_toBottomOf="@+id/descriptionOfPassBtn"
+                    android:id="@+id/savePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorText"
+                    android:background="@drawable/custom_button"
+                    android:text="@string/textForSavePassword"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            app:cardBackgroundColor="#cae8cb"
+            app:cardCornerRadius="10dp"
+            android:visibility="gone"
+            android:id="@+id/wrapperDeletePassword"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="7dp"
+            app:layout_constraintTop_toBottomOf="@+id/wrapperPassword"
+    >
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+        >
+            <TextView
+                    android:id="@+id/descriptionOfPassDelete"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textForDescriptionOfDonePass"
+            />
+
+            <ImageView
+                    android:id="@+id/closeWrapPasswordDel"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:src="@drawable/ic_close_in_wrap_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <EditText
+                    android:id="@+id/checkPassForDelete"
+                    android:layout_marginTop="7dp"
+                    android:hint="@string/addPassword"
+                    android:inputType="textPassword"
+                    app:layout_constraintTop_toBottomOf="@+id/closeWrapPasswordDel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:visibility="gone"
+                    android:textColor="@color/colorError"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/checkPassForDelete"
+                    android:id="@+id/errorsOfPasswordDel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <Button
+                    android:layout_marginTop="7dp"
+                    app:layout_constraintTop_toBottomOf="@+id/errorsOfPasswordDel"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:id="@+id/delPassBtn"
+                    android:text="@string/textForDelPassBtn"
+                    android:background="@drawable/custom_delete_btn"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:layout_height="26dp"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/mainRecyclerView"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/wrapperDeletePassword"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Дневник</string>
+    <string name="descriptionOfApp">Описание</string>
+    <string name="addPassword">Пароль</string>
+    <string name="saveText">сохранить</string>
+    <string name="textForDescriptionOfPhoto">Фотографии:</string>
+    <string name="descriptionOfImageButtonMakePhoto">toMakeAPhoto</string>
+    <string name="descriptionOfImageButtonAddPhoto">toAddAPhoto</string>
+    <string name="textForDescriptionOfText">Записи:</string>
+    <string name="textForTextChangeAndAdd">Пишите!</string>
+    <string name="textForDescriptionOfColors">Цвет фона</string>
+    <string name="textForDescriptionOfPassword">Создание пароля</string>
+    <string name="hintForPass1">Придумайте пароль</string>
+    <string name="hintForPass2">Повторите пароль</string>
+    <string name="textForDescriptionOfPassBtn">для сохранения пароля нажмите OK</string>
+    <string name="textForSavePassword">ОК</string>
+    <string name="textForDelPassBtn">Удалить пароль</string>
+    <string name="textForDescriptionOfDonePass">Удаление пароля</string>
+    <string name="textForDescriptionOfDeletePhoto">Для удаление фото, удерживайте</string>
+    <string name="textForCreateNotesToday">Создать запись на сегодня</string>
+
+    <string name="textForWrongPassword">Неправильный пароль</string>
+    <string name="textToday">Сегодня</string>
+    <string name="textDeletion">Удаление</string>
+    <string name="textDelete">Удалить</string>
+    <string name="textDeleteRecord">Удалить запись?</string>
+    <string name="textCancel">Отмена</string>
+    <string name="textOk">ОК</string>
+    <string name="textRecordSaved">Запись сохранена.</string>
+    <string name="textRecordChanged">Запись изменена.</string>
+    <string name="textRecordDeleted">Запись удалена.</string>
+    <string name="textExit">Выход</string>
+    <string name="textExitApplication">Выйти</string>
+    <string name="textChangesWillNotBeSaved">Изменения не будут сохранены.</string>
+    <string name="textUsingSpace">Использование пробела в пароле запрещено.</string>
+    <string name="textPasswordsDoNotMatch">Пароли не совпадают.</string>
+    <string name="textPasswordNotShorterThanFourCharacters">Пароль не короче четырех символов.</string>
+    <string name="textImpossiblePhoto">Восстановить фото будет невозможно.</string>
+    <string name="textNoPhotos">Фотографий нет.</string>
+    <string name="textNoRecords">Записей нет.</string>
+
+    <string name="textPasswordAdded">Пароль добавлен</string>
+    <string name="textPasswordRemoved">Пароль удален</string>
+
+    <string name="textSunday">Воскресенье</string>
+    <string name="textMonday">Понедельник</string>
+    <string name="textTuesday">Вторник</string>
+    <string name="textWednesday">Среда</string>
+    <string name="textThursday">Четверг</string>
+    <string name="textFriday">Пятница</string>
+    <string name="textSaturday">Суббота</string>
+
+    <string name="textEditing">Редактирование</string>
+    <string name="textViewMode">Режим просмотра</string>
+
+    <string name="textJanuary">Января</string>
+    <string name="textFebruary">Февраля</string>
+    <string name="textMarch">Марта</string>
+    <string name="textApril">Апреля</string>
+    <string name="textMay">Мая</string>
+    <string name="textJune">Июня</string>
+    <string name="textJuly">Июля</string>
+    <string name="textAugust">Августа</string>
+    <string name="textSeptember">Сентября</string>
+    <string name="textOctober">Октября</string>
+    <string name="textNovember">Ноября</string>
+    <string name="textDecember">Декабря</string>
+
+    <string name="textForDescriptionOfPasInPA">Данные дневника защищены паролем</string>
+    <string name="textForDescriptionPage">Каждый день создавайте новую запись, записывайте все, что угодно, добавляете фотографии, выбирайте фон,
+        который подходит к вашему дню и редактируйте ваши записи в течение дня! Так же будьте внимательны, потому что
+        после того как день закончится, ваши записи будут доступы только для просмотра.</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#4CAF50</color>
+    <color name="colorAccentPressed">#04920C</color>
+    <color name="colorText">#fff</color>
+    <color name="colorError">#FF0000</color>
+    <color name="colorForBtnDelete">#FD5A5A</color>
+    <color name="colorForBtnDeletePressed">#C44444</color>
+    <color name="colorPressed">#30000000</color>
+    <color name="colorEnabledBtn">#ccc</color>
+</resources>
