@@ -45,13 +45,9 @@ class DetailsOfDayFragment : Fragment() {
         v = view
 
         idOfDay = arguments!!.getInt("idOfDay")
-
         val db = DBHelper(context!!)
-
         val day = db.getData(idOfDay)!!
-
         db.close()
-
         wrapperDetailsFr.setBackgroundColor(Color.parseColor(day.color))
 
         for(photo in day.photos) {

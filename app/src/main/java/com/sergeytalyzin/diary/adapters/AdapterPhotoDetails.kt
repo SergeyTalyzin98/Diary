@@ -20,7 +20,11 @@ import java.io.File
 import java.io.FileInputStream
 import java.io.FileNotFoundException
 
-class ViewHolderPhotoDetails(val context: Context, view: View, private val activity: FragmentActivity) : RecyclerView.ViewHolder(view) {
+class ViewHolderPhotoDetails(
+    val context: Context,
+    view: View,
+    private val activity: FragmentActivity
+) : RecyclerView.ViewHolder(view) {
 
     private val photo = view.findViewById<ImageView>(R.id.photo)
 
@@ -31,14 +35,14 @@ class ViewHolderPhotoDetails(val context: Context, view: View, private val activ
 
         GlobalScope.launch(Dispatchers.Main) {
             photo.setImageBitmap(finishImg)
-        }
 
-        photo.setOnClickListener {
-            val host: NavHostFragment = (activity as MainActivity).supportFragmentManager
-                .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
-            val fragment = host.childFragmentManager.fragments[0]
-            val p = fragment as DetailsOfDayFragment
-            p.viewPhoto(fail)
+            photo.setOnClickListener {
+                val host: NavHostFragment = (activity as MainActivity).supportFragmentManager
+                    .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+                val fragment = host.childFragmentManager.fragments[0]
+                val p = fragment as DetailsOfDayFragment
+                p.viewPhoto(fail)
+            }
         }
     }
 

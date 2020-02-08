@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        setSupportActionBar(toolbar)
         val mInterstitialAd = InterstitialAd(this)
         mInterstitialAd.adUnitId = "ca-app-pub-5571324881623034/2182172641"
         mInterstitialAd.loadAd(AdRequest.Builder().build())
@@ -22,8 +22,6 @@ class MainActivity : AppCompatActivity() {
                 mInterstitialAd.show()
             }
         }
-
-        setSupportActionBar(toolbar)
     }
 
     override fun onBackPressed() {

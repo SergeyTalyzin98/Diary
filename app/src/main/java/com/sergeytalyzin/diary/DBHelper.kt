@@ -115,29 +115,19 @@ class DBHelper(context: Context, dbName: String = "dataBaseOfDiary", version: In
 
                 val photos = this.db.query("photos", arrayOf("id"), "idOfDay=?",
                     arrayOf(id), null, null, null)
-
                 photos.moveToFirst()
-
                 photosFinish.clear()
 
                 while(!photos.isAfterLast) {
-
                     countPhotos++
-
                     photos.moveToNext()
                 }
-
                 photos.close()
-
                 val dayObj = Day(id.toInt(), day, date, text, color, photosFinish, countPhotos)
-
                 days.add(dayObj)
-
                 countPhotos = 0
-
                 data.moveToNext()
             }
-
             data.close()
             return days
         }
@@ -159,7 +149,6 @@ class DBHelper(context: Context, dbName: String = "dataBaseOfDiary", version: In
                 photos.getString( photos.getColumnIndexOrThrow("id") ),
                 photos.getString( photos.getColumnIndexOrThrow("path") )
             ))
-
             photos.moveToNext()
         }
 
